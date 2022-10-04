@@ -1,8 +1,8 @@
-import { Booking } from '../interfaces';
+import { BookingConfig } from '../interfaces';
 import { v4 as uuidv4 } from 'uuid';
 import { BookingManner, BookingParamFormType } from '../enums';
 
-export const bookings: Booking[] = [
+export const bookingConfigs: BookingConfig[] = [
   {
     description: '記得先在使用的瀏覽器登入過南港運動中心的帳號。',
     executeTime: {

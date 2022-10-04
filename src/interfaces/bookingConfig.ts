@@ -2,7 +2,7 @@ import { BookingManner } from '../enums';
 import { BookingParam } from './bookingParam';
 import { BookingTime } from './bookingTime';
 
-export interface Booking {
+export interface BookingConfig {
   description: string;
   executeTime: BookingTime;
   id: string;
