@@ -8,6 +8,6 @@ export interface BookingConfig {
   id: string;
   manner: BookingManner;
   name: string;
-  queryParams: BookingParam[];
+  params: BookingParam[];
   url: string;
 }

@@ -1,4 +1,4 @@
-import { BookingParamFormType } from '../enums';
+import { BookingParamFormType, BookingParamType } from '../enums';
 import { BookingParamOption } from './bookingParamOption';
 
 export interface BookingParam {
@@ -7,5 +7,6 @@ export interface BookingParam {
   formType: BookingParamFormType;
   name: string;
   options?: BookingParamOption[];
+  type: BookingParamType;
   value: string;
 }

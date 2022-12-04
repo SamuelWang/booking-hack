@@ -1,6 +1,10 @@
 import { BookingConfig } from '../interfaces';
 import { v4 as uuidv4 } from 'uuid';
-import { BookingManner, BookingParamFormType } from '../enums';
+import {
+  BookingManner,
+  BookingParamFormType,
+  BookingParamType,
+} from '../enums';
 
 export const bookingConfigs: BookingConfig[] = [
   {
@@ -13,35 +17,40 @@ export const bookingConfigs: BookingConfig[] = [
     id: uuidv4(),
     manner: BookingManner.URL,
     name: '南港運動中心羽球場地',
-    queryParams: [
+    params: [
       {
         displayName: 'module',
         formType: BookingParamFormType.None,
         name: 'module',
+        type: BookingParamType.QueryString,
         value: 'net_booking',
       },
       {
         displayName: 'files',
         formType: BookingParamFormType.None,
         name: 'files',
+        type: BookingParamType.QueryString,
         value: 'booking_place',
       },
       {
         displayName: 'StepFlag',
         formType: BookingParamFormType.None,
         name: 'StepFlag',
+        type: BookingParamType.QueryString,
         value: '25',
       },
       {
         displayName: 'PT',
         formType: BookingParamFormType.None,
         name: 'PT',
+        type: BookingParamType.QueryString,
         value: '1',
       },
       {
         displayName: '日期',
         formType: BookingParamFormType.Date,
         name: 'D',
+        type: BookingParamType.QueryString,
         value: '',
       },
       {
@@ -74,6 +83,7 @@ export const bookingConfigs: BookingConfig[] = [
             value: '88',
           },
         ],
+        type: BookingParamType.QueryString,
         value: '',
       },
       {
@@ -146,6 +156,7 @@ export const bookingConfigs: BookingConfig[] = [
             value: '21',
           },
         ],
+        type: BookingParamType.QueryString,
         value: '',
       },
     ],
