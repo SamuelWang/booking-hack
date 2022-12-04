@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import { BookingStoreActionType } from '../enums/bookingStoreActionType';
+import { BookingStoreActionType } from '../enums/BookingStoreActionType';
 import { BookingState, Store, StoreAction } from '../interfaces';
 
 function reducer(
